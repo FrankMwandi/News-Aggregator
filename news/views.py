@@ -15,7 +15,7 @@ def news_list(request):
 def scrape(request):
 	session = requests.Session()
 	session.headers = {"User-Agent": "Googlebot/2.1 (+http://www.google.com/bot.html)"}
-	url = "https://millardayo.com/"
+	url = " "
 
 	content = session.get(url, verify=False).content
 	soup = BSoup(content, "html.parser")
